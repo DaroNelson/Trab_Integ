@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Veterinaria La Mary">
+  <title>Veterinaria La Mary</title>
+  <defs><clipPath id="cg"><circle cx="100" cy="100" r="88"/></clipPath></defs>
+  <circle cx="100" cy="100" r="96" fill="#14453A"/>
+  <circle cx="100" cy="100" r="88" fill="#F7DEB4"/>
+  <g clip-path="url(#cg)">
+    <rect x="66" y="92" width="20" height="22" rx="9" fill="#D79C74"/>
+    <path d="M40 196v-38c0-20 16-34 36-34s36 14 36 34v38z" fill="#F7F9F4"/>
+    <path d="M62 124h28l-14 26z" fill="#4FA88C"/>
+    <path d="M62 124l14 26-8 10-16-32z" fill="#EDF1E9"/>
+    <path d="M90 124l-14 26 8 10 16-32z" fill="#EDF1E9"/>
+    <circle cx="76" cy="80" r="24" fill="#E8B58A"/>
+    <path d="M52 80a24 24 0 0 1 48 0c3-11 1-30-24-30S49 69 52 80z" fill="#2B2118"/>
+    <path d="M56 66c8-8 26-10 38-2-6-12-30-14-38 2z" fill="#3E3125"/>
+    <circle cx="68" cy="80" r="2.9" fill="#16241F"/>
+    <circle cx="85" cy="80" r="2.9" fill="#16241F"/>
+    <path d="M69 89c3.5 4.5 10 4.5 13.5 0" stroke="#16241F" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M64 126c-6 16 2 30 16 30s18-10 18-18" stroke="#4FA88C" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <circle cx="98" cy="141" r="6.5" fill="#4FA88C"/>
+    <path d="M110 196v-24c0-16 12-28 28-28s28 12 28 28v24z" fill="#8A9A93"/>
+    <path d="M120 106l-4 24 20-8z" fill="#8A9A93"/>
+    <path d="M120 112l-2 15 12-5z" fill="#F2B8B5"/>
+    <path d="M156 106l4 24-20-8z" fill="#8A9A93"/>
+    <path d="M156 112l2 15-12-5z" fill="#F2B8B5"/>
+    <circle cx="138" cy="128" r="23" fill="#8A9A93"/>
+    <ellipse cx="130" cy="139" rx="9" ry="7" fill="#EDF1E9"/>
+    <ellipse cx="146" cy="139" rx="9" ry="7" fill="#EDF1E9"/>
+    <path d="M138 134l-4 4 4 3 4-3z" fill="#F2B8B5"/>
+    <path d="M138 141c-2 3-6 3-7 0m7 0c2 3 6 3 7 0" stroke="#16241F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <ellipse cx="129" cy="123" rx="3.4" ry="4.2" fill="#16241F"/>
+    <ellipse cx="147" cy="123" rx="3.4" ry="4.2" fill="#16241F"/>
+    <rect x="120" y="150" width="37" height="8" rx="4" fill="#14453A"/>
+    <circle cx="138" cy="164" r="7" fill="#E9A13B"/>
+    <circle cx="138" cy="164" r="3.2" fill="none" stroke="#14453A" stroke-width="2"/>
+    <path d="M112 132h-12m12 6l-11 4m53-10h12m-12 6l11 4" stroke="#54635C" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

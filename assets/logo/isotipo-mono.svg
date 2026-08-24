@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 124" width="120" height="124" role="img" aria-label="Veterinaria La Mary">
+  <title>Veterinaria La Mary</title>
+  <path fill="none" stroke="currentColor" stroke-width="7" fill-rule="evenodd" d="M47 21.7V15a13 13 0 0 1 26 0v6.7a50 50 0 1 1-26 0ZM67.5 14a7.5 7.5 0 1 0-15 0 7.5 7.5 0 0 0 15 0Z"/>
+  <g fill="currentColor">
+    <path d="M60 70c11 0 19 7.5 19 14.2 0 6.9-8 9.9-19 9.9s-19-3-19-9.9C41 77.5 49 70 60 70Z"/>
+    <ellipse cx="37" cy="65" rx="6.8" ry="9.3" transform="rotate(-26 37 65)"/>
+    <ellipse cx="49" cy="53" rx="7.1" ry="9.8" transform="rotate(-11 49 53)"/>
+    <ellipse cx="71" cy="53" rx="7.1" ry="9.8" transform="rotate(11 71 53)"/>
+    <ellipse cx="83" cy="65" rx="6.8" ry="9.3" transform="rotate(26 83 65)"/>
+  </g>
+</svg>

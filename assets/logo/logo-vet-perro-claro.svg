@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="200" role="img" aria-label="Veterinaria La Mary">
+  <title>Veterinaria La Mary</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap');
+    .marca { font-family:'Bricolage Grotesque','Public Sans',system-ui,sans-serif; font-weight:800; letter-spacing:-1.2px; }
+    .rotulo { font-family:'IBM Plex Mono',ui-monospace,monospace; font-weight:500; letter-spacing:4.6px; }
+  </style>
+  <g transform="translate(0 22) scale(.78)">
+    <defs><clipPath id="cp"><circle cx="100" cy="100" r="88"/></clipPath></defs>
+  <circle cx="100" cy="100" r="96" fill="#EDF1E9"/>
+  <circle cx="100" cy="100" r="88" fill="#D6EADF"/>
+  <g clip-path="url(#cp)">
+    <rect x="66" y="92" width="20" height="22" rx="9" fill="#E0AE85"/>
+    <path d="M40 196v-38c0-20 16-34 36-34s36 14 36 34v38z" fill="#F7F9F4"/>
+    <path d="M62 124h28l-14 26z" fill="#14453A"/>
+    <path d="M62 124l14 26-8 10-16-32z" fill="#EDF1E9"/>
+    <path d="M90 124l-14 26 8 10 16-32z" fill="#EDF1E9"/>
+    <circle cx="54" cy="58" r="12" fill="#4A3227"/>
+    <circle cx="76" cy="80" r="24" fill="#F0C39B"/>
+    <path d="M52 82a24 24 0 0 1 48 0c2-8 1-30-24-30S50 74 52 82z" fill="#4A3227"/>
+    <circle cx="68" cy="80" r="2.9" fill="#16241F"/>
+    <circle cx="85" cy="80" r="2.9" fill="#16241F"/>
+    <path d="M69 89c3.5 4.5 10 4.5 13.5 0" stroke="#16241F" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M64 126c-6 16 2 30 16 30s18-10 18-18" stroke="#4FA88C" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <circle cx="98" cy="141" r="6.5" fill="#4FA88C"/>
+    <path d="M106 196v-26c0-18 14-30 32-30s32 12 32 30v26z" fill="#E9A13B"/>
+    <ellipse cx="126" cy="178" rx="10" ry="8" fill="#F7DEB4"/>
+    <ellipse cx="150" cy="178" rx="10" ry="8" fill="#F7DEB4"/>
+    <path d="M116 116c-10 2-14 14-11 26 3 11 12 14 17 10z" fill="#C9822A"/>
+    <path d="M160 116c10 2 14 14 11 26-3 11-12 14-17 10z" fill="#C9822A"/>
+    <circle cx="138" cy="124" r="24" fill="#E9A13B"/>
+    <ellipse cx="138" cy="138" rx="15" ry="11" fill="#F7DEB4"/>
+    <ellipse cx="138" cy="131" rx="5" ry="4" fill="#16241F"/>
+    <path d="M138 135v4m0 0c-2 3-6 3-7 0m7 0c2 3 6 3 7 0" stroke="#16241F" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="129" cy="118" r="3.1" fill="#16241F"/>
+    <circle cx="147" cy="118" r="3.1" fill="#16241F"/>
+    <rect x="118" y="150" width="40" height="8" rx="4" fill="#14453A"/>
+    <circle cx="138" cy="164" r="7" fill="#E9A13B"/>
+    <circle cx="138" cy="164" r="3.2" fill="none" stroke="#14453A" stroke-width="2"/>
+  </g>
+  </g>
+  <text class="rotulo" style="font-size:13px" x="180" y="88" fill="#4FA88C">VETERINARIA</text>
+  <text class="marca" style="font-size:50px" x="178" y="140" fill="#EDF1E9">La<tspan dx="12" fill="#E9A13B">Mary</tspan></text>
+</svg>

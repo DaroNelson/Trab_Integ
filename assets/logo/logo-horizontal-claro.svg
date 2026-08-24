@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 124" width="340" height="124" role="img" aria-label="Veterinaria La Mary">
+  <title>Veterinaria La Mary</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap');
+    .marca { font-family:'Bricolage Grotesque','Public Sans',system-ui,sans-serif; font-weight:800; letter-spacing:-1.2px; word-spacing:4px; }
+    .rotulo { font-family:'IBM Plex Mono',ui-monospace,monospace; font-weight:500; letter-spacing:4.6px; }
+  </style>
+  <g transform="translate(0 12) scale(.81)">
+  <path fill="#E9A13B" fill-rule="evenodd" d="M47 21.7V15a13 13 0 0 1 26 0v6.7a50 50 0 1 1-26 0ZM67.5 14a7.5 7.5 0 1 0-15 0 7.5 7.5 0 0 0 15 0Z"/>
+  <circle cx="60" cy="70" r="41" fill="none" stroke="#0D2E27" stroke-width="6"/>
+  <g fill="#0D2E27">
+    <path d="M60 68c12 0 21 8.5 21 16 0 7.8-9 11.2-21 11.2S39 91.8 39 84c0-7.5 9-16 21-16Z"/>
+    <ellipse cx="35" cy="63" rx="7.6" ry="10.4" transform="rotate(-26 35 63)"/>
+    <ellipse cx="48" cy="50" rx="8" ry="11" transform="rotate(-11 48 50)"/>
+    <ellipse cx="72" cy="50" rx="8" ry="11" transform="rotate(11 72 50)"/>
+    <ellipse cx="85" cy="63" rx="7.6" ry="10.4" transform="rotate(26 85 63)"/>
+  </g>
+  </g>
+  <text class="rotulo" style="font-size:13px" x="118" y="50" fill="#4FA88C">VETERINARIA</text>
+  <text class="marca" style="font-size:46px" x="116" y="98" fill="#EDF1E9">La<tspan dx="11" fill="#E9A13B">Mary</tspan></text>
+</svg>

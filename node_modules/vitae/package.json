@@ -1,0 +1,27 @@
+{
+  "name": "vitae",
+  "version": "0.1.0",
+  "description": "Clever markdown CV generator with CLI and version control written in Node.js.",
+  "main": "bin/vitae.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wildhoney/Vitae.git"
+  },
+  "keywords": [
+    "curriculum vitae",
+    "vitae",
+    "CV",
+    "C.V.",
+    "résumé",
+    "resume"
+  ],
+  "author": "Adam Timberlake <adam.timberlake@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wildhoney/Vitae/issues"
+  },
+  "homepage": "https://github.com/Wildhoney/Vitae"
+}
