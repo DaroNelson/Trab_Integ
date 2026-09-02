@@ -1,0 +1,21 @@
+:root {
+  --selva: #14453A;
+  --selva-900: #0D2E27;
+  --menta: #4FA88C;
+  --miel: #E9A13B;
+  --miel-suave: #F7DEB4;
+  --hueso: #EDF1E9;
+  --hueso-2: #F7F9F4;
+  --tinta: #16241F;
+  --acero: #6C7C74;
+  --alerta: #C0472F;
+
+  --radio: 14px;
+  --radio-sm: 9px;
+  --sombra: 0 1px 2px rgba(22, 36, 31, .06), 0 10px 30px -18px rgba(22, 36, 31, .45);
+  --borde: 1px solid rgba(20, 69, 58, .14);
+
+  --display: "Bricolage Grotesque", "Public Sans", system-ui, sans-serif;
+  --texto: "Public Sans", system-ui, -apple-system, sans-serif;
+  --dato: "IBM Plex Mono", ui-monospace, monospace;
+}

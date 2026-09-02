@@ -1,18 +1,19 @@
 body{
     font-family: sans-serif;
     margin: 0;
+    background-color: var(--selva);
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--hueso);
     
 }
 
 header{
         display: flex; 
         height: 70px;
-        background: coral;
+        background: var(--selva-900);
         align-items: center;
         padding: 10px;
         justify-content: space-between;
@@ -36,7 +37,7 @@ header{
 }
 .nombre-veterinaria em{
     font-style: normal;
-    color: blue;
+    color: var(--miel);
 }
 
 
@@ -46,5 +47,7 @@ nav a{
 }
 
 nav a:hover{
-    color: white;
+    color: var(--miel-suave);
+    text-decoration: underline;
+    text-decoration-color: var(--miel-suave);
 }
