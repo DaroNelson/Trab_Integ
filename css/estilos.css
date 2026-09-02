@@ -2,6 +2,8 @@ body{
     font-family: sans-serif;
     margin: 0;
     background-color: var(--selva);
+    display: flex;
+    flex-direction: column
 }
 
 a{
@@ -50,4 +52,79 @@ nav a:hover{
     color: var(--miel-suave);
     text-decoration: underline;
     text-decoration-color: var(--miel-suave);
+}
+
+/********* estilos para el footer ****************/
+
+.footer {
+    background: var(--selva-900);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 8%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    color: #f6a623;
+}
+
+.footer-col a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color .3s;
+}
+
+.footer-col a:hover {
+    color: var(--miel-suave);
+}
+
+/* Logo */
+.brand {
+    text-align: right;
+}
+
+.brand img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.brand h3 {
+    margin: 0;
+}
+
+/* Centro */
+.nav-links {
+    text-align: center;
+}
+
+/* Izquierda */
+.social {
+    text-align: left;
+}
+
+/* Barra inferior */
+.footer-bottom {
+    background: var(--selva-900);
+    color: var(--hueso);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/******* Estilos para el main ****************/
+main{
+    flex: 1;
+    padding: 20px;
+    background-color: var(--hueso-2);
 }
