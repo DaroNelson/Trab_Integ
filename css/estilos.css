@@ -4,7 +4,7 @@ body{
     background-color: var(--selva);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    min-height: 100vh;
 }
 
 a{
@@ -99,7 +99,7 @@ nav a:hover{
     line-height: 1.5;
 }
  
-/* Columna 1: Marca (logo primero, alineado a la izquierda, como el header) */
+/* Columna 1: Logo */
 .brand{
     display: flex;
     flex-direction: column;

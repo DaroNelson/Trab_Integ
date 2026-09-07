@@ -58,10 +58,6 @@ p {
     4. ENLACES
 =====================================================*/
 
-/* El estilo base de <a> (color hueso) va en estilos.css,
-   pensado para header/footer sobre fondo oscuro.
-   Esta variante es para enlaces sobre fondo claro. */
-
 .enlace-oscuro {
     color: var(--selva);
     text-decoration: none;
