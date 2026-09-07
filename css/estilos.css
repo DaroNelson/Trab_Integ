@@ -57,8 +57,8 @@ nav a:hover{
     text-decoration-color: var(--miel-suave);
 }
 
-/********* estilos para el footer ****************/
-
+/*** estilos para el footer ******/
+ 
 .footer {
     background: var(--selva-900);
     color: white;
@@ -69,17 +69,17 @@ nav a:hover{
     gap: 40px;
     flex-wrap: wrap;
 }
-
+ 
 .footer-col {
     flex: 1;
-    min-width: 220px;
+    min-width: 200px;
 }
-
+ 
 .footer-col h3 {
     margin-bottom: 15px;
     color: #f6a623;
 }
-
+ 
 .footer-col a {
     display: block;
     color: white;
@@ -87,46 +87,62 @@ nav a:hover{
     margin-bottom: 10px;
     transition: color .3s;
 }
-
+ 
 .footer-col a:hover {
     color: var(--miel-suave);
 }
-
-/* Logo */
+ 
+.footer-col p {
+    color: var(--hueso);
+    margin: 0 0 8px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+ 
+/* Columna 1: Marca (logo primero, alineado a la izquierda, como el header) */
 .brand{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+ 
+.footer-logo{
+    display: flex;
     align-items: center;
-    text-align: center;
+    margin-bottom: 12px;
 }
-
-.brand img{
-    width: 70px;
-    margin-bottom: 10px;
+ 
+.footer-logo img{
+    width: 46px;
+    margin-right: 10px;
 }
-
+ 
 .nombre-footer{
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
+    color: white;
 }
-
+ 
 .nombre-footer em{
     font-style: normal;
     color: var(--miel);
 }
-
-/* Centro */
-.nav-links {
-    text-align: left;
+ 
+.footer-bajada{
+    color: var(--hueso);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    max-width: 220px;
 }
-
-/* Izquierda */
-.social {
-    text-align: left;
+ 
+/* Columna 3: Contacto */
+.footer-horario{
+    color: var(--menta);
 }
-
+ 
 /* Barra inferior */
 .footer-bottom {
     background: var(--selva-900);
