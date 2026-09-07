@@ -78,10 +78,6 @@ p {
 
 /* ---------- Botones ---------- */
 
-/* .boton (definido en el proyecto) ya funciona como botón primario:
-   fondo miel, texto selva-900, hover miel-suave.
-   Acá se agregan las variantes secundaria y outline. */
-
 .boton-secundario {
     display: inline-block;
     font-weight: bold;
@@ -115,9 +111,6 @@ p {
 }
 
 /* ---------- Tarjetas ---------- */
-
-/* Card genérica de la que pueden partir .card-veterinario,
-   .card-plan, o cualquier tarjeta nueva que necesiten */
 
 .card {
     background-color: white;
@@ -177,9 +170,6 @@ tbody tr:hover {
 /*=====================================================
     6. UTILIDADES
 =====================================================*/
-
-/* Para reutilizar el mismo patrón de título+subtítulo
-   que ya usás en .veterinarios y .planes */
 
 .seccion-titulo {
     color: var(--selva-900);
