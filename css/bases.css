@@ -1,3 +1,7 @@
+/*=====================================================
+    1. VARIABLES
+=====================================================*/
+
 :root {
   --selva: #14453A;
   --selva-900: #0D2E27;
@@ -18,4 +22,176 @@
   --display: "Bricolage Grotesque", "Public Sans", system-ui, sans-serif;
   --texto: "Public Sans", system-ui, -apple-system, sans-serif;
   --dato: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/*=====================================================
+    2. BODY
+=====================================================*/
+
+body {
+    font-family: var(--texto);
+}
+
+/*=====================================================
+    3. TIPOGRAFÍA BASE (títulos y párrafos)
+=====================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--display);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+p {
+    font-family: var(--texto);
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+/* Para precios, matrículas, horarios y otros datos "técnicos" */
+.dato {
+    font-family: var(--dato);
+}
+
+/*=====================================================
+    4. ENLACES
+=====================================================*/
+
+/* El estilo base de <a> (color hueso) va en estilos.css,
+   pensado para header/footer sobre fondo oscuro.
+   Esta variante es para enlaces sobre fondo claro. */
+
+.enlace-oscuro {
+    color: var(--selva);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.enlace-oscuro:hover {
+    color: var(--miel);
+}
+
+/*=====================================================
+    5. COMPONENTES REUTILIZABLES
+=====================================================*/
+
+/* ---------- Botones ---------- */
+
+/* .boton (definido en el proyecto) ya funciona como botón primario:
+   fondo miel, texto selva-900, hover miel-suave.
+   Acá se agregan las variantes secundaria y outline. */
+
+.boton-secundario {
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: var(--radio-sm);
+    background-color: transparent;
+    color: var(--hueso);
+    border: 1px solid var(--hueso);
+    transition: background-color .3s, color .3s;
+}
+
+.boton-secundario:hover {
+    background-color: var(--hueso);
+    color: var(--selva-900);
+}
+
+.boton-outline-oscuro {
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: var(--radio-sm);
+    background-color: transparent;
+    color: var(--selva);
+    border: 1px solid var(--selva);
+    transition: background-color .3s, color .3s;
+}
+
+.boton-outline-oscuro:hover {
+    background-color: var(--selva);
+    color: var(--hueso);
+}
+
+/* ---------- Tarjetas ---------- */
+
+/* Card genérica de la que pueden partir .card-veterinario,
+   .card-plan, o cualquier tarjeta nueva que necesiten */
+
+.card {
+    background-color: white;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 25px;
+    color: var(--tinta);
+}
+
+.card h3 {
+    color: var(--selva);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--acero);
+}
+
+/* ---------- Tablas ---------- */
+
+/* Para más adelante: listados de mascotas, veterinarios y turnos */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+}
+
+thead {
+    background-color: var(--selva-900);
+}
+
+thead th {
+    color: var(--hueso);
+    text-align: left;
+    padding: 14px 18px;
+    font-weight: 600;
+}
+
+tbody td {
+    padding: 12px 18px;
+    border-bottom: var(--borde);
+    color: var(--tinta);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--hueso-2);
+}
+
+tbody tr:hover {
+    background-color: var(--miel-suave);
+}
+
+/*=====================================================
+    6. UTILIDADES
+=====================================================*/
+
+/* Para reutilizar el mismo patrón de título+subtítulo
+   que ya usás en .veterinarios y .planes */
+
+.seccion-titulo {
+    color: var(--selva-900);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.seccion-subtitulo {
+    color: var(--acero);
+    margin-bottom: 40px;
+}
+
+.texto-centrado {
+    text-align: center;
 }
