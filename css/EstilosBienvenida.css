@@ -110,7 +110,7 @@
 
     gap: 25px;
 
-    flex-wrap: wrap; /* Permite que las cards se ajusten a la pantalla y se muevan a la siguiente línea si es necesario */
+    flex-wrap: wrap; 
 }
 
 
@@ -219,7 +219,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Permite que las cards se ajusten a la pantalla y se muevan a la siguiente línea si es necesario */
+    flex-wrap: wrap; 
     max-width: 1100px;
     width: 100%;
 }
