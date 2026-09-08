@@ -1,88 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/EstilosBienvenida.css">
-    <link rel="stylesheet" href="./css/bases.css">
-    <link rel="stylesheet" href="./css/estilos.css" >
-    <title>Veterinaria Huellitas</title>
-</head>
-<body>
-    
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/EstilosBienvenida.css" />
+    <link rel="stylesheet" href="./css/bases.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/institucional.css" />
+
+    <title>Veterinaria Huellitas - Sobre Nosotros</title>
+  </head>
+
+  <body>
     <header>
+      <a href="index.html" class="Logo">
+        <img
+          src="./assets/logo/LogoHuellitas/isotipo-512.png"
+          alt="Veterinaria Huellitas"
+        />
 
-        <a href="index.html" class="Logo">
-            <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas">
-            <span class="nombre-veterinaria">Veterinaria <em>Huellitas
-            </em></span>
-        </a>
-        
-        <nav>
-             <a href="index.html" class="nav-link">
-                Inicio
-             </a>
-             <a href="institucional.html" class="nav-link">
-                Sobre Nosotros
-             </a> 
-             <a href="cobertura.html" class="nav-link">
-                Cobertura
-             </a>
-             <a href="contactos.html" class="nav-link">
-                Contactos
-             </a>
+        <span class="nombre-veterinaria">
+          Veterinaria
+          <em>Huellitas</em>
+        </span>
+      </a>
 
-        </nav>
-  
+      <nav>
+        <a href="index.html" class="nav-link"> Inicio </a>
+
+        <a href="institucional.html" class="nav-link"> Sobre Nosotros </a>
+
+        <a href="cobertura.html" class="nav-link"> Cobertura </a>
+
+        <a href="contactos.html" class="nav-link"> Contactos </a>
+      </nav>
     </header>
-    
 
-</main>
+    <main id="institucional">
+      <!-- HERO -->
+      <section class="institucional-hero">
+        <div class="institucional-hero-texto">
+          <span class="institucional-etiqueta"> SOBRE NOSOTROS </span>
 
-<footer class="footer">
+          <h1>
+            Nuestra historia<br />
+            también deja huella
+          </h1>
 
-    <!-- 1: logo  -->
-    <div class="footer-col brand">
+          <p>
+            Más que una veterinaria, somos un equipo de personas que ama a los
+            animales y trabaja cada día para brindarles una vida más sana y
+            feliz.
+          </p>
+
+          <a href="#historia" class="boton"> Conocé nuestra historia </a>
+        </div>
+
+        <div class="institucional-hero-imagen">
+          <img
+            src="./assets/imagen_hero_sobre_nosotros.png"
+            alt="Perro y gato de Veterinaria Huellitas"
+          />
+        </div>
+      </section>
+
+      <!-- NUESTRA HISTORIA -->
+      <section class="historia" id="historia">
+        <div class="historia-contenedor">
+          <div class="historia-imagen">
+            <img
+              src="./assets/veterinaria_afuera.png"
+              alt="Instalaciones de Veterinaria Huellitas"
+            />
+          </div>
+
+          <div class="historia-texto">
+            <span class="institucional-etiqueta"> NUESTRA HISTORIA </span>
+
+            <h2>Un camino que empezó en Ceres</h2>
+
+            <p>
+              Veterinaria Huellitas nació en Ceres, Santa Fe, con el sueño de
+              crear un espacio donde las mascotas y sus familias se sientan
+              acompañadas y bien cuidadas.
+            </p>
+
+            <p>
+              Comenzamos como un pequeño consultorio y, gracias a la confianza
+              de la comunidad, fuimos creciendo e incorporando nuevos servicios,
+              equipamiento y profesionales comprometidos.
+            </p>
+
+            <p>
+              Hoy seguimos con el mismo objetivo del primer día: brindar una
+              atención veterinaria de calidad, cercana y humana.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MISIÓN Y VISIÓN -->
+      <section class="mision-vision">
+        <article class="card-institucional">
+          <div class="card-institucional-icono">✓</div>
+
+          <div class="card-institucional-contenido">
+            <span class="institucional-etiqueta"> NUESTRA MISIÓN </span>
+
+            <h2>Misión</h2>
+
+            <p>
+              Brindar atención veterinaria integral y de calidad, priorizando el
+              bienestar de cada mascota y acompañando a sus familias con
+              responsabilidad, ética y calidez humana.
+            </p>
+          </div>
+        </article>
+
+        <article class="card-institucional">
+          <div class="card-institucional-icono">◉</div>
+
+          <div class="card-institucional-contenido">
+            <span class="institucional-etiqueta"> NUESTRA VISIÓN </span>
+
+            <h2>Visión</h2>
+
+            <p>
+              Ser una veterinaria reconocida en la región por la excelencia de
+              nuestros servicios, el compromiso con la salud animal y la
+              confianza de nuestra comunidad.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- VALORES -->
+      <section class="valores">
+        <div class="valores-encabezado">
+          <span class="institucional-etiqueta"> NUESTROS VALORES </span>
+
+          <h2>Lo que nos define</h2>
+        </div>
+
+        <div class="valores-contenedor">
+          <article class="valor">
+            <div class="valor-icono">♡</div>
+
+            <h3>Empatía</h3>
+
+            <p>
+              Entendemos el vínculo único entre las mascotas y sus familias.
+            </p>
+          </article>
+
+          <article class="valor">
+            <div class="valor-icono">●</div>
+
+            <h3>Responsabilidad</h3>
+
+            <p>Actuamos con compromiso en cada diagnóstico y tratamiento.</p>
+          </article>
+
+          <article class="valor">
+            <div class="valor-icono">◎</div>
+
+            <h3>Trabajo en equipo</h3>
+
+            <p>Creemos en la colaboración para brindar la mejor atención.</p>
+          </article>
+
+          <article class="valor">
+            <div class="valor-icono">❧</div>
+
+            <h3>Bienestar animal</h3>
+
+            <p>
+              Promovemos una vida sana, segura y feliz para todas las mascotas.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- 1: logo -->
+      <div class="footer-col brand">
         <a href="index.html" class="footer-logo">
-            <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas">
-            <span class="nombre-footer">
-                Veterinaria
-                <em>Huellitas</em>
-            </span>
+          <img
+            src="./assets/logo/LogoHuellitas/isotipo-512.png"
+            alt="Veterinaria Huellitas"
+          />
+
+          <span class="nombre-footer">
+            Veterinaria
+            <em>Huellitas</em>
+          </span>
         </a>
-        <p class="footer-bajada">Cuidamos la salud de tu mascota con amor y profesionalismo.</p>
-    </div>
 
-    <!-- 2: Secciones -->
-    <div class="footer-col nav-links">
+        <p class="footer-bajada">
+          Cuidamos la salud de tu mascota con amor y profesionalismo.
+        </p>
+      </div>
+
+      <!-- 2: Secciones -->
+      <div class="footer-col nav-links">
         <h3>Secciones</h3>
-        <a href="index.html">Inicio</a>
-        <a href="institucional.html">Sobre Nosotros</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contactos.html">Contacto</a>
-    </div>
 
-    <!-- 3: Contacto -->
-    <div class="footer-col contacto-footer">
+        <a href="index.html"> Inicio </a>
+
+        <a href="institucional.html"> Sobre Nosotros </a>
+
+        <a href="cobertura.html"> Cobertura </a>
+
+        <a href="contactos.html"> Contacto </a>
+      </div>
+
+      <!-- 3: Contacto -->
+      <div class="footer-col contacto-footer">
         <h3>Contacto</h3>
+
         <p>Av. Siempre Viva 123, Ceres, Santa Fe</p>
+
         <p>(03491) 000-000</p>
+
         <p class="footer-horario">Lun a Vie 8 a 20 hs · Sáb 9 a 13 hs</p>
-    </div>
+      </div>
 
-    <!-- 4: Redes -->
-    <div class="footer-col social">
+      <!-- 4: Redes -->
+      <div class="footer-col social">
         <h3>Seguinos</h3>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
+
+        <a href="#"> Facebook </a>
+
+        <a href="#"> Instagram </a>
+
+        <a href="#"> WhatsApp </a>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Veterinaria Huellitas. Todos los derechos reservados.</p>
     </div>
-
-</footer>
-
-<div class="footer-bottom">
-    <p>&copy; 2026 Veterinaria Huellitas. Todos los derechos reservados.</p>
-</div>
-
-</body>
+  </body>
 </html>
