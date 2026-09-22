@@ -1,20 +1,16 @@
 /********* SECCIÓN BIENVENIDA **********/
 
 .bienvenida {
-    min-height: 450px;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
 
     padding: 40px 8%;
+    align-items: center;
 }
 
 .bienvenida-texto {
-    flex: 1;
-    max-width: 600px;
+    flex: 1 1 300px;   
     text-align:left;
 }
 
@@ -33,20 +29,19 @@
 /********* IMAGEN BIENVENIDA **********/
 
 .bienvenida-imagen {
-    flex: 1;
-
     display: flex;
-
+    flex: 1 1 300px;
     justify-content: center;
     align-items: center;
 }
 
 .bienvenida-imagen img {
+   
     width: 100%;
-    max-width: 550px;
-    height: auto;
+    max-width: 500px;
+    height: auto; 
 
-    display: block;
+   
 }
 
 
@@ -262,7 +257,7 @@
 
 /********* MEDIA QUERIES (SERVICIOS) **********/
 
-@media (max-width: 768px) {
+/**   @media (max-width: 768px) {
     .contenedor-servicios {
         flex-direction: column;
         align-items: center;
@@ -275,7 +270,7 @@
 }
 
 /********* MEDIA QUERIES (BIENVENIDA) **********/
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
     .bienvenida {
         flex-direction: column;
