@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="./css/EstilosBienvenida.css">
     <link rel="stylesheet" href="./css/bases.css">
     <link rel="stylesheet" href="./css/estilos.css" >
@@ -39,10 +41,11 @@
 <main id="inicio">
 
     <!-- SECCIÓN DE BIENVENIDA -->
-    <section class="bienvenida">
+    
+    <section class="bienvenida row text-center">
 
         <!-- COLUMNA IZQUIERDA -->
-        <div class="bienvenida-texto">
+        <div class="bienvenida-texto col-12 col-md-6 text-center text-md-start">
 
             <h1>Bienvenidos a Veterinaria Huellitas</h1>
 
@@ -59,69 +62,66 @@
 
 
         <!-- COLUMNA DERECHA -->
-        <div class="bienvenida-imagen">
+        <div class="bienvenida-imagen col-12 col-md-6">
 
-            <img 
-                src="./assets/imgbienvenida.png"
-                alt="Perro y gato en veterinaria"
-            >
+            <img src="./assets/imgbienvenida.png" alt="Perro y gato en veterinaria">            >
 
         </div>
 
     </section>
 
-   <!-- SECCIÓN DE SERVICIOS -->
-<section class="servicios">
-    
-    <!-- ENCABEZADO  -->
-    <div class="servicios-encabezado">
-        <span class="subtitulo-seccion">SERVICIOS</span>
-        <h2>Todo en el mismo lugar</h2>
-        <p>
-            Resolvemos la consulta, el estudio y el tratamiento sin derivarte a otro centro. 
-            La historia clínica queda registrada y disponible para el próximo control.
-        </p>
-    </div>
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section class="servicios">
+        
+        <!-- ENCABEZADO  -->
+        <div class="servicios-encabezado">
+            <span class="subtitulo-seccion">SERVICIOS</span>
+            <h2>Todo en el mismo lugar</h2>
+            <p>
+                Resolvemos la consulta, el estudio y el tratamiento sin derivarte a otro centro. 
+                La historia clínica queda registrada y disponible para el próximo control.
+            </p>
+        </div>
 
-    <!-- TARJETAS DE SERVICIOS ABAJO -->
-    <div class="contenedor-servicios">
+        <!-- TARJETAS DE SERVICIOS ABAJO -->
+      
+        <div class="contenedor-servicios  row g-4">
 
-        <article class="card-servicio">
-            <div class="icono-servicio">
-                <i class="fas fa-stethoscope"></i>
-            </div>
-            <h3>Consultorios</h3>
-            <p>Cuatro consultorios equipados con balanza, otoscopio y ecógrafo portátil para diagnósticos inmediatos.</p>
-        </article>
+            <article class="card-servicio col-12 col-md-6 col-lg-3">
+                <div class="icono-servicio">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Consultorios</h3>
+                <p>Cuatro consultorios equipados con balanza, otoscopio y ecógrafo portátil para diagnósticos inmediatos.</p>
+            </article>
 
-        <article class="card-servicio">
-            <div class="icono-servicio">
-                <i class="fas fa-cut"></i>
-            </div>
-            <h3>Quirófano</h3>
-            <p>Cirugías programadas y de urgencia con monitoreo anestésico completo para la seguridad de tu mascota.</p>
-        </article>
+            <article class="card-servicio col-12 col-md-6 col-lg-3">
+                <div class="icono-servicio">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Quirófano</h3>
+                <p>Cirugías programadas y de urgencia con monitoreo anestésico completo para la seguridad de tu mascota.</p>
+            </article>
 
-        <article class="card-servicio">
-            <div class="icono-servicio">
-                <i class="fas fa-flask"></i>
-            </div>
-            <h3>Laboratorio</h3>
-            <p>Hemogramas y análisis bioquímicos completos con entrega de resultados en el mismo día.</p>
-        </article>
+            <article class="card-servicio col-12 col-md-6 col-lg-3">
+                <div class="icono-servicio">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Laboratorio</h3>
+                <p>Hemogramas y análisis bioquímicos completos con entrega de resultados en el mismo día.</p>
+            </article>
 
-        <article class="card-servicio">
-            <div class="icono-servicio">
-                <i class="fas fa-bed"></i>
-            </div>
-            <h3>Internación</h3>
-            <p>Ocho boxes individuales con control nocturno permanente y parte médico diario para las familias.</p>
-        </article>
+            <article class="card-servicio col-12 col-md-6 col-lg-3">
+                <div class="icono-servicio">
+                    <i class="fas fa-bed"></i>
+                </div>
+                <h3>Internación</h3>
+                <p>Ocho boxes individuales con control nocturno permanente y parte médico diario para las familias.</p>
+            </article>
 
-    </div>
+        </div>
 
-</section>
-
+    </section>
 
     <!-- SECCIÓN VETERINARIOS -->
     <section class="veterinarios">
@@ -133,12 +133,11 @@
             a tus mascotas.
         </p>
 
-
-        <div class="contenedor-cards">
-
+       
+        <div class="contenedor-cards row g-4">
 
             <!-- VETERINARIO 1 -->
-            <article class="card-veterinario">
+            <article class="card-veterinario col-12 col-md-4">
 
                 <img
                     src="./assets/avatarveterinario.png"
@@ -159,9 +158,8 @@
 
             </article>
 
-
             <!-- VETERINARIO 2 -->
-            <article class="card-veterinario">
+            <article class="card-veterinario col-12 col-md-4">
 
                 <img
                     src="./assets/avatarveterinario.png"
@@ -182,9 +180,8 @@
 
             </article>
 
-
             <!-- VETERINARIO 3 -->
-            <article class="card-veterinario">
+            <article class="card-veterinario col-12 col-md-4">
 
                 <img
                     src="./assets/avatarveterinario.png"
@@ -204,7 +201,6 @@
                 </p>
 
             </article>
-
 
         </div>
 
