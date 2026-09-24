@@ -1,4 +1,3 @@
-/********* SECCIÓN CONTACTO **********/
 .contacto {
     background-color: var(--selva);
 }
@@ -31,7 +30,7 @@
     margin: 0;
 }
  
-/* ===== EMERGENCIA ===== */
+/* ===== EMERGENCIA  ===== */
 .info-item.emergencia {
     background-color: rgba(192, 71, 47, 0.15);
     border: var(--borde);
@@ -64,11 +63,7 @@
     box-shadow: var(--sombra);
 }
  
-.footer a {
-    text-decoration: none;
-}
- 
-/* ===== AJUSTES PARA CELULAR ===== */
+/* ===== AJUSTES EXTRA PARA CELULAR ===== */
 @media (max-width: 575.98px) {
     .contacto-info h2 {
         font-size: 1.6rem;
