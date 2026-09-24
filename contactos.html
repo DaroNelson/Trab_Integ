@@ -3,144 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Veterinaria Huellitas</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/EstilosBienvenida.css">
     <link rel="stylesheet" href="./css/bases.css">
-    <link rel="stylesheet" href="./css/EstilosGlobales.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/contactos.css">
-    <title>Veterinaria Huellitas - Contacto</title>
+    <link rel="stylesheet" href="./css/bootstrap-compat.css">
+    <link rel="stylesheet" href="./css/contacto-bootstrap.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
+    <!-- ========== NAVBAR RESPONSIVA (hamburguesa en móvil) ========== -->
     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-huellitas">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas" width="45" height="45">
+                    <span class="nombre-veterinaria">Veterinaria <em>Huellitas</em></span>
+                </a>
 
-        <a href="index.html" class="Logo">
-            <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas">
-            <span class="nombre-veterinaria">Veterinaria <em>Huellitas</em></span>
-        </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="institucional.html" class="nav-link">Sobre Nosotros</a>
-            <a href="cobertura.html" class="nav-link">Cobertura</a>
-            <a href="contactos.html" class="nav-link">Contactos</a>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="institucional.html">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cobertura.html">Cobertura</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
 
-    <main id="contacto">
+    <!-- ========== CONTACTO ========== -->
+    <main id="contacto" class="flex-grow-1">
+        <section class="contacto py-5">
+            <div class="container">
+                <div class="row g-5 align-items-start">
 
-        <section class="contacto">
-            <div class="contacto-contenedor">
+                    <!-- Columna de información: ocupa todo el ancho en móvil, la mitad desde lg -->
+                    <div class="col-12 col-lg-6 contacto-info">
+                        <h2>Contacto</h2>
+                        <p class="contacto-subtitulo">Comunicate con nosotros por el medio que prefieras.</p>
 
-                <div class="contacto-info">
-                    <h2>Contacto</h2>
-                    <p class="contacto-subtitulo">Comunicate con nosotros por el medio que prefieras.</p>
-
-                    <div class="info-item">
-                        <span class="info-icono">📍</span>
-                        <div>
-                            <h3>Ubicación</h3>
-                            <p>Av. Siempre Viva 123, Ceres, Santa Fe</p>
+                        <div class="d-flex gap-3 mb-4 info-item">
+                            <span class="info-icono">📍</span>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>Av. Siempre Viva 123, Ceres, Santa Fe</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="info-item">
-                        <span class="info-icono">📞</span>
-                        <div>
-                            <h3>Teléfonos</h3>
-                            <p>Consultas: (03491) 000-000</p>
-                            <p>WhatsApp: 3491 000-0000</p>
+                        <div class="d-flex gap-3 mb-4 info-item">
+                            <span class="info-icono">📞</span>
+                            <div>
+                                <h3>Teléfonos</h3>
+                                <p>Consultas: (03491) 000-000</p>
+                                <p>WhatsApp: 3491 000-0000</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="info-item">
-                        <span class="info-icono">🕒</span>
-                        <div>
-                            <h3>Horarios de atención</h3>
-                            <p>Lunes a Viernes: 8:00 a 20:00 hs</p>
-                            <p>Sábados: 9:00 a 13:00 hs</p>
+                        <div class="d-flex gap-3 mb-4 info-item">
+                            <span class="info-icono">🕒</span>
+                            <div>
+                                <h3>Horarios de atención</h3>
+                                <p>Lunes a Viernes: 8:00 a 20:00 hs</p>
+                                <p>Sábados: 9:00 a 13:00 hs</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="info-item emergencia">
-                        <span class="info-icono">🚨</span>
-                        <div>
-                            <h3>Emergencias</h3>
-                            <p>Atención de urgencias las 24 hs</p>
-                            <p class="telefono-emergencia">3491 000-0000</p>
+                        <!-- Bloque de emergencia: alert de Bootstrap + estilo propio -->
+                        <div class="alert d-flex gap-3 mb-4 info-item emergencia" role="alert">
+                            <span class="info-icono">🚨</span>
+                            <div>
+                                <h3>Emergencias</h3>
+                                <p>Atención de urgencias las 24 hs</p>
+                                <p class="telefono-emergencia">3491 000-0000</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="info-item">
-                        <span class="info-icono">🌐</span>
-                        <div>
-                            <h3>Seguinos</h3>
-                            <div class="redes-contacto">
-                                <a href="#">Facebook</a>
-                                <a href="#">Instagram</a>
+                        <div class="d-flex gap-3 info-item">
+                            <span class="info-icono">🌐</span>
+                            <div>
+                                <h3>Seguinos</h3>
+                                <div class="d-flex flex-wrap gap-3 redes-contacto">
+                                    <a href="#">Facebook</a>
+                                    <a href="#">Instagram</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Mapa: mantiene la proporción en cualquier pantalla -->
+                    <div class="col-12 col-lg-6">
+                        <div class="ratio ratio-4x3 contacto-mapa">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Ceres%2C%20Santa%20Fe&t=&z=14&ie=UTF8&iframe=true&output=embed"
+                                title="Ubicación de Veterinaria Huellitas"
+                                allowfullscreen
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3 footer-col brand">
+                    <a href="index.html" class="footer-logo d-flex align-items-center gap-2">
+                        <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas" width="45" height="45">
+                        <span class="nombre-footer">Veterinaria <em>Huellitas</em></span>
+                    </a>
+                    <p class="footer-bajada mt-3">Cuidamos la salud de tu mascota con amor y profesionalismo.</p>
                 </div>
 
-                <div class="contacto-mapa">
-                    <iframe
-                        src="https://maps.google.com/maps?q=Ceres%2C%20Santa%20Fe&t=&z=14&ie=UTF8&iframe=true&output=embed"
-                        title="Ubicación de Veterinaria Huellitas"
-                        allowfullscreen=""
-                        loading="lazy">
-                    </iframe>
+                <div class="col-6 col-md-6 col-lg-3 footer-col nav-links">
+                    <h3>Secciones</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="institucional.html">Sobre Nosotros</a></li>
+                        <li><a href="cobertura.html">Cobertura</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3 footer-col contacto-footer">
+                    <h3>Contacto</h3>
+                    <p>Av. Siempre Viva 123, Ceres, Santa Fe</p>
+                    <p>(03491) 000-000</p>
+                    <p class="footer-horario">Lun a Vie 8 a 20 hs · Sáb 9 a 13 hs</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 footer-col social">
+                    <h3>Seguinos</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
                 </div>
 
             </div>
-        </section>
+        </div>
+    </footer>
 
-    </main>
-
-    <footer class="footer">
-
-    <!-- 1: logo  -->
-    <div class="footer-col brand">
-        <a href="index.html" class="footer-logo">
-            <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas">
-            <span class="nombre-footer">
-                Veterinaria
-                <em>Huellitas</em>
-            </span>
-        </a>
-        <p class="footer-bajada">Cuidamos la salud de tu mascota con amor y profesionalismo.</p>
+    <div class="footer-bottom text-center py-3">
+        <p class="mb-0">&copy; 2026 Veterinaria Huellitas. Todos los derechos reservados.</p>
     </div>
 
-    <!-- 2: Secciones -->
-    <div class="footer-col nav-links">
-        <h3>Secciones</h3>
-        <a href="index.html">Inicio</a>
-        <a href="institucional.html">Sobre Nosotros</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contactos.html">Contacto</a>
-    </div>
-
-    <!-- 3: Contacto -->
-    <div class="footer-col contacto-footer">
-        <h3>Contacto</h3>
-        <p>Av. Siempre Viva 123, Ceres, Santa Fe</p>
-        <p>(03491) 000-000</p>
-        <p class="footer-horario">Lun a Vie 8 a 20 hs · Sáb 9 a 13 hs</p>
-    </div>
-
-    <!-- 4: Redes -->
-    <div class="footer-col social">
-        <h3>Seguinos</h3>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
-    </div>
-
-</footer>
-
-<div class="footer-bottom">
-    <p>&copy; 2026 Veterinaria Huellitas. Todos los derechos reservados.</p>
-</div>
-
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
