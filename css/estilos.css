@@ -24,6 +24,17 @@ header{
         justify-content: space-between;
 }
 
+header > nav .nav-link {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    color: var(--hueso);
+    font-weight: 600;
+}
+
+header > nav .nav-link:hover {
+    color: var(--miel-suave);
+}
+
 .Logo{
     display: flex;
     align-items: center;
