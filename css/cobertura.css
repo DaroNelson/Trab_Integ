@@ -1,95 +1,66 @@
 .banner-coberturas {
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 8%;
     background-color: var(--selva);
 }
-
-.banner-coberturas-texto {
-    flex: 1;
-    max-width: 600px;
-}
-
+ 
 .banner-coberturas-texto h1 {
     color: var(--hueso);
     font-size: 2.3rem;
     margin-bottom: 20px;
 }
-
+ 
 .banner-coberturas-texto p {
     color: var(--hueso);
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 30px;
 }
-
-.banner-coberturas-imagen {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner-coberturas-imagen img {
-    width: 100%;
+ 
+.banner-img {
     max-width: 450px;
-    height: auto;
-    display: block;
 }
-
-/*** SECCIÓN PLANES ****/
-
+ 
+/* ===== PLANES ===== */
 .planes {
     background-color: var(--hueso);
-    padding: 60px 8%;
-    text-align: center;
 }
-
+ 
 .planes h2 {
     color: var(--selva-900);
     font-size: 2rem;
     margin-bottom: 10px;
 }
-
+ 
 .descripcion-planes {
     color: var(--acero);
     margin-bottom: 40px;
 }
-
-.planes-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 25px;
-}
-
-/*** CARD DE PLAN ***/
-
+ 
+/* ===== CARD DE PLAN (sobre .card de Bootstrap) ===== */
 .card-plan {
-    position: relative;
+    padding: 0; /* bases.css da 25px a .card y se sumaría al card-body */
     background-color: white;
-    width: 280px;
-    padding: 30px 25px;
+    border: 0;
     border-radius: var(--radio);
     box-shadow: var(--sombra);
     color: var(--tinta);
-    display: flex;
-    flex-direction: column;
 }
-
+ 
+.card-plan .card-body {
+    padding: 30px 25px;
+}
+ 
 .card-plan.destacado {
     border: 2px solid var(--miel);
-    transform: scale(1.04);
 }
-
+ 
+/* Solo se agranda en escritorio; en móvil/tablet el scale se salía de la pantalla */
+@media (min-width: 992px) {
+    .card-plan.destacado {
+        transform: scale(1.04);
+    }
+}
+ 
 .badge-destacado {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: var(--miel);
     color: var(--selva-900);
     font-size: 0.8rem;
@@ -97,25 +68,25 @@
     padding: 5px 15px;
     border-radius: var(--radio-sm);
 }
-
+ 
 .card-plan h3 {
     color: var(--selva);
     margin-bottom: 10px;
 }
-
-.precio {
+ 
+.card-plan .precio { /* más específico que ".card p" de bases.css */
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--selva-900);
     margin-bottom: 20px;
 }
-
-.precio span {
+ 
+.card-plan .precio span {
     font-size: 1rem;
     font-weight: normal;
     color: var(--acero);
 }
-
+ 
 .lista-beneficios {
     list-style: none;
     padding: 0;
@@ -123,14 +94,14 @@
     text-align: left;
     flex: 1;
 }
-
+ 
 .lista-beneficios li {
     padding: 6px 0 6px 26px;
     position: relative;
     color: var(--acero);
     line-height: 1.4;
 }
-
+ 
 .lista-beneficios li.incluido::before {
     content: "✓";
     position: absolute;
@@ -138,19 +109,25 @@
     color: var(--menta);
     font-weight: bold;
 }
-
+ 
 .lista-beneficios li.no-incluido {
     color: #b8b8b0;
 }
-
+ 
 .lista-beneficios li.no-incluido::before {
     content: "✕";
     position: absolute;
     left: 0;
     color: var(--alerta);
 }
-
+ 
 .boton-plan {
     align-self: center;
     text-align: center;
+}
+ 
+@media (max-width: 575.98px) {
+    .banner-coberturas-texto h1 {
+        font-size: 1.8rem;
+    }
 }
