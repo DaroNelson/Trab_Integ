@@ -73,10 +73,10 @@
     </section>
 
     <!-- SECCIÓN DE SERVICIOS -->
-    <section class="servicios">
+<section class="servicios ">
         
-        <!-- ENCABEZADO  -->
-        <div class="servicios-encabezado">
+        <!-- ENCABEZADO -->
+        <div class="servicios-encabezado text-center mb-4">
             <span class="subtitulo-seccion">SERVICIOS</span>
             <h2>Todo en el mismo lugar</h2>
             <p>
@@ -85,124 +85,126 @@
             </p>
         </div>
 
-        <!-- TARJETAS DE SERVICIOS ABAJO -->
-      
-        <div class="contenedor-servicios  row g-4">
+        <!-- TARJETAS DE SERVICIOS BOOTSTRAP -->
+        <div class="row g-4 justify-content-center">
 
-            <article class="card-servicio col-12 col-md-6 col-lg-3">
-                <div class="icono-servicio">
-                    <i class="fas fa-stethoscope"></i>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="icono-servicio mb-3 fs-1">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3 class="card-title h5">Consultorios</h3>
+                        <p class="card-text">Cuatro consultorios equipados con balanza, otoscopio y ecógrafo portátil para diagnósticos inmediatos.</p>
+                    </div>
                 </div>
-                <h3>Consultorios</h3>
-                <p>Cuatro consultorios equipados con balanza, otoscopio y ecógrafo portátil para diagnósticos inmediatos.</p>
-            </article>
+            </div>
 
-            <article class="card-servicio col-12 col-md-6 col-lg-3">
-                <div class="icono-servicio">
-                    <i class="fas fa-cut"></i>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="icono-servicio mb-3 fs-1">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3 class="card-title h5">Quirófano</h3>
+                        <p class="card-text">Cirugías programadas y de urgencia con monitoreo anestésico completo para la seguridad de tu mascota.</p>
+                    </div>
                 </div>
-                <h3>Quirófano</h3>
-                <p>Cirugías programadas y de urgencia con monitoreo anestésico completo para la seguridad de tu mascota.</p>
-            </article>
+            </div>
 
-            <article class="card-servicio col-12 col-md-6 col-lg-3">
-                <div class="icono-servicio">
-                    <i class="fas fa-flask"></i>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="icono-servicio mb-3 fs-1">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="card-title h5">Laboratorio</h3>
+                        <p class="card-text">Hemogramas y análisis bioquímicos completos con entrega de resultados en el mismo día.</p>
+                    </div>
                 </div>
-                <h3>Laboratorio</h3>
-                <p>Hemogramas y análisis bioquímicos completos con entrega de resultados en el mismo día.</p>
-            </article>
+            </div>
 
-            <article class="card-servicio col-12 col-md-6 col-lg-3">
-                <div class="icono-servicio">
-                    <i class="fas fa-bed"></i>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="icono-servicio mb-3 fs-1">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3 class="card-title h5">Internación</h3>
+                        <p class="card-text">Ocho boxes individuales con control nocturno permanente y parte médico diario para las familias.</p>
+                    </div>
                 </div>
-                <h3>Internación</h3>
-                <p>Ocho boxes individuales con control nocturno permanente y parte médico diario para las familias.</p>
-            </article>
+            </div>
 
         </div>
 
     </section>
 
     <!-- SECCIÓN VETERINARIOS -->
-    <section class="veterinarios">
+  <!-- SECCIÓN VETERINARIOS CON CARDS DE BOOTSTRAP -->
+    <section class="veterinarios  text-center">
 
         <h2>Conocé a nuestro equipo</h2>
 
-        <p class="descripcion-equipo">
-            Contamos con profesionales preparados para cuidar
-            a tus mascotas.
+        <p class="descripcion-equipo mb-4">
+            Contamos con profesionales preparados para cuidar a tus mascotas.
         </p>
 
-       
-        <div class="contenedor-cards row g-4">
+        <div class="row g-4 justify-content-center">    
 
             <!-- VETERINARIO 1 -->
-            <article class="card-veterinario col-12 col-md-4">
-
-                <img
-                    src="./assets/avatarveterinario.png"
-                    alt="Dr. Juan Pérez"
-                >
-
-                <h3>Dr. Juan Pérez</h3>
-
-                <p>
-                    <strong>Especialidad:</strong><br>
-                    Clínica general
-                </p>
-
-                <p>
-                    <strong>Consulta:</strong><br>
-                    $15.000
-                </p>
-
-            </article>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="./assets/avatarveterinario.png" class="card-img-top p-3 rounded-circle w-50 mx-auto" alt="Dr. Juan Pérez">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Dr. Juan Pérez</h3>
+                        <p class="card-text mb-1">
+                            <strong>Especialidad:</strong><br>
+                            Clínica general
+                        </p>
+                        <p class="card-text text-dark fw-bold">
+                            <strong>Consulta:</strong><br>
+                            $15.000
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <!-- VETERINARIO 2 -->
-            <article class="card-veterinario col-12 col-md-4">
-
-                <img
-                    src="./assets/avatarveterinario.png"
-                    alt="Dra. María Gómez"
-                >
-
-                <h3>Dra. María Gómez</h3>
-
-                <p>
-                    <strong>Especialidad:</strong><br>
-                    Cirugía veterinaria
-                </p>
-
-                <p>
-                    <strong>Consulta:</strong><br>
-                    $18.000
-                </p>
-
-            </article>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="./assets/avatarveterinario.png" class="card-img-top p-3 rounded-circle w-50 mx-auto" alt="Dra. María Gómez">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Dra. María Gómez</h3>
+                        <p class="card-text mb-1">
+                            <strong>Especialidad:</strong><br>
+                            Cirugía veterinaria
+                        </p>
+                        <p class="card-text text-dark fw-bold">
+                            <strong>Consulta:</strong><br>
+                            $18.000
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <!-- VETERINARIO 3 -->
-            <article class="card-veterinario col-12 col-md-4">
-
-                <img
-                    src="./assets/avatarveterinario.png"
-                    alt="Dr. Carlos López"
-                >
-
-                <h3>Dr. Carlos López</h3>
-
-                <p>
-                    <strong>Especialidad:</strong><br>
-                    Animales pequeños
-                </p>
-
-                <p>
-                    <strong>Consulta:</strong><br>
-                    $16.000
-                </p>
-
-            </article>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="./assets/avatarveterinario.png" class="card-img-top p-3 rounded-circle w-50 mx-auto" alt="Dr. Carlos López">
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Dr. Carlos López</h3>
+                        <p class="card-text mb-1">
+                            <strong>Especialidad:</strong><br>
+                            Animales pequeños
+                        </p>
+                        <p class="card-text text-dark fw-bold">
+                            <strong>Consulta:</strong><br>
+                            $16.000
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
