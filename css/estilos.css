@@ -15,23 +15,23 @@ a{
 
 /********* Estilos para el header **********/
 
-header{
-        display: flex; 
-        height: 70px;
-        background: var(--selva-900);
-        align-items: center;
-        padding: 10px;
-        justify-content: space-between;
+/********* Estilos para el header **********/
+
+header {
+    background: var(--selva-900);
+    padding: 5px 10px;
 }
 
-header > nav .nav-link {
-    display: inline-block;
-    padding: 0 0 0 10px;
+/* Remueve estilos rígidos de 'nav a' que puedan colisionar con Bootstrap */
+header .navbar-nav .nav-link {
     color: var(--hueso);
     font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-header > nav .nav-link:hover {
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link.active {
     color: var(--miel-suave);
 }
 

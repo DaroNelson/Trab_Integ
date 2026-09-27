@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/EstilosBienvenida.css">
     <link rel="stylesheet" href="./css/bases.css">
-    <link rel="stylesheet" href="./css/EstilosGlobales.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/cobertura.css">
-    <title>Veterinaria Huellitas - Cobertura</title>
+    <link rel="stylesheet" href="./css/estilos.css" >
+    <title>Contacto | Veterinaria Huellitas</title>
+
+    <link rel="stylesheet" href="./css/contactos.css">
 </head>
 <body>
 
-    <header>
+        <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-huellitas">
+        <div class="container-fluid">
 
-        <a href="index.html" class="Logo">
-            <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas">
-            <span class="nombre-veterinaria">Veterinaria <em>Huellitas</em></span>
-        </a>
+            <a class="navbar-brand Logo" href="index.html">
+                <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas">
+                <span class="nombre-veterinaria">Veterinaria <em>Huellitas</em></span>
+            </a>
 
-        <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="institucional.html" class="nav-link">Sobre Nosotros</a>
-            <a href="cobertura.html" class="nav-link">Cobertura</a>
-            <a href="contactos.html" class="nav-link">Contactos</a>
-        </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    </header>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="institucional.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cobertura.html">Cobertura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
 
     <main id="cobertura">
 
@@ -145,6 +160,6 @@
 <div class="footer-bottom">
     <p>&copy; 2026 Veterinaria Huellitas. Todos los derechos reservados.</p>
 </div>
-
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
