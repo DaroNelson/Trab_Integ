@@ -125,6 +125,13 @@
     align-self: center;
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    .banner-img {
+        max-width: 280px;   /* más chica en celulares */
+        margin-top: 1rem;
+    }
+}
  
 @media (max-width: 575.98px) {
     .banner-coberturas-texto h1 {

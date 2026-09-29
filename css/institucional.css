@@ -2,19 +2,14 @@
   background-color: var(--selva);
 }
 
+/* ---------- HERO ---------- */
+
 .institucional-hero {
-  min-height: 430px;
-  padding: 55px 8%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
   background-color: var(--selva);
   overflow: hidden;
 }
 
 .institucional-hero-texto {
-  width: 42%;
   max-width: 520px;
 }
 
@@ -59,47 +54,22 @@
   transform: translateY(-2px);
 }
 
-.institucional-hero-imagen {
-  width: 52%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.institucional-hero img {
+  max-width: 650px;
 }
 
-.institucional-hero-imagen img {
-  display: block;
-  width: 100%;
-  max-width: 650px;
-  height: auto;
-  object-fit: contain;
-}
+/* ---------- HISTORIA ---------- */
 
 .historia {
-  padding: 70px 8%;
   background-color: var(--hueso-2);
 }
 
-.historia-contenedor {
-  width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  align-items: center;
-  gap: 55px;
-}
-
-.historia-imagen {
-  width: 100%;
-}
-
-.historia-imagen img {
-  display: block;
-  width: 100%;
+.historia-imagen-img {
   height: 310px;
   object-fit: cover;
   border-radius: var(--radio);
   box-shadow: var(--sombra);
+  width: 100%;
 }
 
 .historia-texto h2 {
@@ -112,23 +82,19 @@
   color: var(--acero);
 }
 
+/* ---------- MISIÓN Y VISIÓN ---------- */
+
 .mision-vision {
-  padding: 0 8% 70px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
   background-color: var(--hueso-2);
 }
 
 .card-institucional {
   padding: 30px;
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
   background-color: var(--hueso);
   border: var(--borde);
   border-radius: var(--radio);
   box-shadow: var(--sombra);
+  height: 100%;
 }
 
 .card-institucional-icono {
@@ -165,14 +131,10 @@
   color: var(--acero);
 }
 
-.valores {
-  padding: 65px 8% 80px;
-  background-color: var(--hueso);
-}
+/* ---------- VALORES ---------- */
 
-.valores-encabezado {
-  margin-bottom: 45px;
-  text-align: center;
+.valores {
+  background-color: var(--hueso);
 }
 
 .valores-encabezado .institucional-etiqueta {
@@ -185,23 +147,9 @@
   font-size: 2rem;
 }
 
-.valores-contenedor {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-}
-
-.valor {
-  text-align: center;
-}
-
 .valor-icono {
   width: 70px;
   height: 70px;
-  margin: 0 auto 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,18 +172,16 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 900px) {
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 767.98px) {
   .institucional-hero {
-    min-height: auto;
-    flex-direction: column;
-    padding-top: 55px;
-    padding-bottom: 45px;
     text-align: center;
   }
 
   .institucional-hero-texto {
-    width: 100%;
     max-width: 650px;
+    margin: 0 auto;
   }
 
   .institucional-hero h1 {
@@ -247,41 +193,21 @@
     margin-right: auto;
   }
 
-  .institucional-hero-imagen {
-    width: 100%;
-    max-width: 650px;
+  .institucional-hero img {
+    max-width: 350px;
+}
+
+  .historia-imagen-img {
+    height: 250px;
   }
 
-  .institucional-hero-imagen img {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .historia-contenedor {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .historia-imagen img {
-    height: 350px;
-  }
-
-  .mision-vision {
-    grid-template-columns: 1fr;
-  }
-
-  .valores-contenedor {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 45px;
+  .card-institucional {
+    flex-direction: column;
+    gap: 18px;
   }
 }
 
-@media (max-width: 600px) {
-  .institucional-hero {
-    padding: 45px 6% 35px;
-    gap: 30px;
-  }
-
+@media (max-width: 575.98px) {
   .institucional-hero h1 {
     font-size: 2rem;
   }
@@ -290,20 +216,11 @@
     font-size: 0.95rem;
   }
 
-  .institucional-hero-imagen {
-    width: 100%;
-  }
+  .institucional-hero img {
+    max-width: 350px;
+}
 
-  .institucional-hero-imagen img {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .historia {
-    padding: 50px 6%;
-  }
-
-  .historia-imagen img {
+  .historia-imagen-img {
     height: 230px;
   }
 
@@ -311,26 +228,11 @@
     font-size: 1.7rem;
   }
 
-  .mision-vision {
-    padding: 0 6% 55px;
-  }
-
   .card-institucional {
     padding: 25px;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .valores {
-    padding: 55px 6%;
   }
 
   .valores-encabezado h2 {
     font-size: 1.7rem;
-  }
-
-  .valores-contenedor {
-    grid-template-columns: 1fr;
-    gap: 40px;
   }
 }
