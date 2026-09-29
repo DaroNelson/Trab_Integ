@@ -66,7 +66,7 @@
         <!-- COLUMNA DERECHA -->
         <div class="bienvenida-imagen col-12 col-md-6">
 
-            <img src="./assets/imgbienvenida.png" alt="Perro y gato en veterinaria">            >
+            <img src="./assets/imgbienvenida.png" alt="Perro y gato en veterinaria">            
 
         </div>
 
@@ -213,49 +213,56 @@
 </main>
 
 <footer class="footer">
-
-    <!-- 1: logo  -->
-    <div class="footer-col brand">
-        <a href="index.html" class="footer-logo">
-            <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas">
-            <span class="nombre-footer">
-                Veterinaria
-                <em>Huellitas</em>
-            </span>
-        </a>
-        <p class="footer-bajada">Cuidamos la salud de tu mascota con amor y profesionalismo.</p>
+    <div class="container">
+        <div class="row g-4">
+ 
+            <!-- 1: Logo -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <a href="index.html" class="footer-logo d-flex align-items-center text-decoration-none mb-3">
+                    <img src="./assets/logo/LogoHuellitas/isotipo-512.png" alt="Veterinaria Huellitas" class="me-2">
+                    <span class="nombre-footer d-flex flex-column fw-bold">
+                        Veterinaria
+                        <em>Huellitas</em>
+                    </span>
+                </a>
+                <p class="footer-bajada">Cuidamos la salud de tu mascota con amor y profesionalismo.</p>
+            </div>
+ 
+            <!-- 2: Secciones -->
+            <div class="col-6 col-md-6 col-lg-3">
+                <h3>Secciones</h3>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="index.html" class="text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="institucional.html" class="text-decoration-none">Sobre Nosotros</a></li>
+                    <li class="mb-2"><a href="cobertura.html" class="text-decoration-none">Cobertura</a></li>
+                    <li class="mb-2"><a href="contactos.html" class="text-decoration-none">Contactos</a></li>
+                </ul>
+            </div>
+ 
+            <!-- 3: Contacto -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3>Contacto</h3>
+                <p>Av. Siempre Viva 123, Ceres, Santa Fe</p>
+                <p>(03491) 000-000</p>
+                <p class="footer-horario">Lun a Vie 8 a 20 hs · Sáb 9 a 13 hs</p>
+            </div>
+ 
+            <!-- 4: Redes -->
+            <div class="col-6 col-md-6 col-lg-3">
+                <h3>Seguinos</h3>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="#" class="text-decoration-none">Facebook</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none">Instagram</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none">WhatsApp</a></li>
+                </ul>
+            </div>
+ 
+        </div>
     </div>
-
-    <!-- 2: Secciones -->
-    <div class="footer-col nav-links">
-        <h3>Secciones</h3>
-        <a href="index.html">Inicio</a>
-        <a href="institucional.html">Sobre Nosotros</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contactos.html">Contacto</a>
-    </div>
-
-    <!-- 3: Contacto -->
-    <div class="footer-col contacto-footer">
-        <h3>Contacto</h3>
-        <p>Av. Siempre Viva 123, Ceres, Santa Fe</p>
-        <p>(03491) 000-000</p>
-        <p class="footer-horario">Lun a Vie 8 a 20 hs · Sáb 9 a 13 hs</p>
-    </div>
-
-    <!-- 4: Redes -->
-    <div class="footer-col social">
-        <h3>Seguinos</h3>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
-    </div>
-
 </footer>
-
-<div class="footer-bottom">
-    <p>&copy; 2026 Veterinaria Huellitas. Todos los derechos reservados.</p>
-</div>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<div class="footer-bottom text-center">
+    <p class="mb-0">&copy; 2026 Veterinaria Huellitas. Todos los derechos reservados.</p>
+</div>    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
